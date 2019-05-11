@@ -1,0 +1,14 @@
+.nav {
+  display: none;
+  @include desktop {
+    height: 100%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    &-link {
+      text-decoration: none;
+      color: $light;
+      font-size: 0.8rem;
+    }
+  }
+}

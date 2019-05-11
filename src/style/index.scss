@@ -1,7 +1,10 @@
 @import 'modules/variables';
 @import 'modules/mixins';
 @import 'modules/media-queries';
-
+@import 'partials/layout';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/mobile-nav';
 * {
   margin: 0;
   padding: 0;

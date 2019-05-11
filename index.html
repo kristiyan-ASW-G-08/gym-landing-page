@@ -12,16 +12,44 @@
     <title>Document</title>
   </head>
   <body>
-    <header id="header">
-      <div class="header-logo-container">
-        <img id="header-img" alt="logo" />
+    <header class="header" id="header">
+      <div class="header__logo">
+        <img
+          id="header-img"
+          alt="logo"
+          src="./src/assets/logo/logo-primary.svg"
+        />
       </div>
+      <button class="header__nav-button">
+        <div class="btn--line"></div>
+        <div class="btn--line"></div>
+        <div class="btn--line"></div>
+      </button>
       <nav class="nav" id="nav-bar">
-        <a class="nav-link"></a>
-        <a class="nav-link"></a>
-        <a class="nav-link"></a>
+        <a class="nav-link" href="">Home</a>
+        <a class="nav-link" href="">About Us</a>
+        <a class="nav-link" href="">Blog</a>
       </nav>
     </header>
+    <nav class="nav--mobile">
+      <ul class="list nav--mobile--active__list">
+        <li class="nav--mobile--active__list__item">
+          <a class="active " href="">Home</a>
+        </li>
+        <li class="nav--mobile--active__list__item">
+          <a>About</a>
+        </li>
+        <li class="nav--mobile--active__list__item">
+          <a>Hosting</a>
+        </li>
+        <li class="nav--mobile--active__list__item">
+          <a>Domain</a>
+        </li>
+        <li class="nav--mobile--active__list__item">
+          <a>Contact</a>
+        </li>
+      </ul>
+    </nav>
     <main role="main">
       <section class="section section-landing">
         <div class="landing-banner-container">
