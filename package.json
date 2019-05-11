@@ -1,0 +1,21 @@
+{
+  "name": "gym-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kristiyan Todorov",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "glider-js": "^1.6.6",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "node-sass": "^4.12.0",
+    "stylelint": "^10.0.1",
+    "stylelint-scss": "^3.6.1"
+  }
+}
