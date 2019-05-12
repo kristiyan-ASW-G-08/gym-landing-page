@@ -1,0 +1,40 @@
+.section--landing {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(rgba(black, 0.5), rgba(black, 0.5)),
+    url(../assets/images/person.jpg) center no-repeat;
+  background-size: cover;
+  @include center;
+  transition: all 0.3s ease-in-out;
+  &__container {
+    width: 90%;
+    height: 25vh;
+    padding: 0.5rem;
+    background: rgba($dark, 0.8);
+    color: darken($light, 10%);
+    @include center;
+    @include desktop {
+      width: 30%;
+    }
+    .title {
+      width: 100%;
+      font-size: 2rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    button {
+      background: $primary;
+      color: $light;
+      width: 7rem;
+      border: solid 2px $light;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 15px;
+      &:hover {
+        background: $light;
+        color: $dark;
+      }
+    }
+  }
+}

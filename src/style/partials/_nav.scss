@@ -5,10 +5,15 @@
     display: grid;
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
     &-link {
       text-decoration: none;
       color: $light;
-      font-size: 0.8rem;
+      font-size: 1.1rem;
+      transition: 250ms;
+      &:hover {
+        color: $primary;
+      }
     }
   }
 }
