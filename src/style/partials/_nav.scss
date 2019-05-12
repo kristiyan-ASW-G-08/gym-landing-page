@@ -1,18 +1,24 @@
 .nav {
   display: none;
   @include desktop {
+    display: block;
     height: 100%;
+  }
+  &__list {
     display: grid;
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
-    &-link {
-      text-decoration: none;
-      color: $light;
-      font-size: 1.1rem;
-      transition: 250ms;
-      &:hover {
-        color: $primary;
+    list-style: none;
+    &__item {
+      .nav-link {
+        text-decoration: none;
+        color: $light;
+        font-size: 1.1rem;
+        transition: 250ms;
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }

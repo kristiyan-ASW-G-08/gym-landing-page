@@ -1,0 +1,65 @@
+.section--about {
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  grid:
+    'title'
+    'video '
+    'info'/1fr;
+  @include desktop {
+    padding: 2rem;
+    grid:
+      'title title'
+      'video info'/1fr 1fr;
+  }
+  &__title {
+    grid-area: title;
+    text-align: center;
+    font-size: 2rem;
+    span {
+      color: $primary;
+    }
+  }
+  &__container {
+    &--video {
+      grid-area: video;
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+      .video {
+        margin: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        border: 0;
+      }
+    }
+    &--info {
+      grid-area: info;
+      display: grid;
+      align-content: center;
+      grid-gap: 1rem;
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+      }
+      .buttons-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+        grid-gap: 1rem;
+        button {
+          background: $primary;
+          border: none;
+          color: $light;
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
+}

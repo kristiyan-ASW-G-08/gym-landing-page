@@ -32,9 +32,17 @@
         <div class="btn--line"></div>
       </button>
       <nav class="nav" id="nav-bar">
-        <a class="nav-link" href="">Home</a>
-        <a class="nav-link" href="">About Us</a>
-        <a class="nav-link" href="">Blog</a>
+        <ul class="nav__list">
+          <li class="nav__list__item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav-link" href="">About Us</a>
+          </li>
+          <li class="nav__list__item">
+            <a class="nav-link" href="">Blog</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <nav class="nav--mobile">
@@ -63,7 +71,40 @@
           <button>Join Now</button>
         </div>
       </section>
-      <section class="section section section-about"></section>
+      <section class="section  section--about">
+        <h2 class="section--about__title">About <span>Acme</span></h2>
+        <div class="section--about__container--video">
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            gesture="media"
+            allow="encrypted-media"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="section--about__container--info">
+            <h2 class="section__title slide" id="about-title">Who we are</h2>
+          <p class="section__text slide" id="about-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consectetur magnam exercitationem est laudantium reprehenderit
+            nesciunt molestias delectus assumenda laborum accusantium veritatis,
+            odit nisi, iusto, perferendis facere dicta. Quibusdam,
+            sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Eaque, quisquam perferendis nulla dolorem totam quae.
+          </p>
+          <div class="buttons-container ">
+            <button class="button " id="content-btn-1">
+              Who we are
+            </button>
+            <button class="button " id="content-btn-2">
+              What we do
+            </button>
+            <button class="button " id="content-btn-3">
+              Our customers
+            </button>
+          </div>
+        </div>
+      </section>
       <section class="section section-testimonials"></section>
       <section class="section section-blog"></section>
       <section class="section section-newsletter"></section>
