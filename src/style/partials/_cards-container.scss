@@ -1,0 +1,11 @@
+.cards--container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2.5rem;
+  padding: 1rem;
+  @include tablet {
+    padding: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

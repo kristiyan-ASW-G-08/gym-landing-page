@@ -9,7 +9,6 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "glider-js": "^1.6.6",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

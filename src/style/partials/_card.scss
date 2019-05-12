@@ -1,0 +1,39 @@
+.card {
+  &__img {
+    width: 100%;
+    object-fit: contain;
+  }
+  &__body {
+    padding-top: 0.3rem;
+    &__title {
+      font-size: 1rem;
+      padding-bottom: 0.3rem;
+      color: darken($light, 10%);
+      transition: 250ms;
+      &:hover {
+        color: $primary;
+      }
+    }
+    &__date {
+      color: $primary;
+      font-weight: bold;
+      font-size: 0.5rem;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    &__text {
+      text-align: left;
+      font-size: 0.7rem;
+      color: lighten($dark, 40%);
+      line-height: 1.7;
+      padding: 0.3rem 0 0.3rem 0;
+    }
+    &__link {
+      display: block;
+      margin-top: 1rem;
+      color: $primary;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

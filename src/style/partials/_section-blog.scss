@@ -1,0 +1,14 @@
+.section--blog {
+  padding-top: 2rem;
+  width: 100vw;
+  background: $dark;
+  &__title {
+    color: $light;
+    grid-area: title;
+    text-align: center;
+    font-size: 2rem;
+    span {
+      color: $primary;
+    }
+  }
+}

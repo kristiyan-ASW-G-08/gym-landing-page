@@ -8,19 +8,18 @@
   @include center;
   transition: all 0.3s ease-in-out;
   &__container {
-    width: 90%;
-    height: 25vh;
-    padding: 0.5rem;
+    width: 100%;
     background: rgba($dark, 0.8);
     color: darken($light, 10%);
+    padding: 1rem;
     @include center;
     @include desktop {
       width: 30%;
     }
     .title {
       width: 100%;
-      font-size: 2rem;
-      padding: 1rem;
+      font-size: 1.7rem;
+      padding: 0.2rem;
       text-align: center;
     }
     button {

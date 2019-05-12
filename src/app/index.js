@@ -2,7 +2,6 @@
 import mobileNav from './mobileNav';
 import switchContent from './switchContent';
 mobileNav();
-
 const btn1 = {
   id: 'content-btn-1',
   title: 'Who we are',

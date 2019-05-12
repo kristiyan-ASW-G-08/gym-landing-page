@@ -7,7 +7,8 @@
     'video '
     'info'/1fr;
   @include desktop {
-    padding: 2rem;
+    height: 90vh;
+    padding: 3rem;
     grid:
       'title title'
       'video info'/1fr 1fr;
