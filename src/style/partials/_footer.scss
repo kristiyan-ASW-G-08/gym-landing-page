@@ -1,0 +1,65 @@
+.footer {
+  border-top: solid 4rem $primary;
+  background: $dark;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  color: darken($light, 20%);
+  @include desktop {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  }
+  &__logo {
+    height: 5rem;
+    width: 100%;
+    @include center;
+    img {
+      height: 5rem;
+      width: 5rem;
+      object-fit: contain;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: grid;
+    justify-items: center;
+    grid-gap: 0.7rem;
+    &__item {
+      font-size: 0.9rem;
+      color: darken($light, 20%);
+      text-align: center;
+      &--title {
+        color: darken($light, 10%);
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &__container {
+    &__title {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    input {
+      height: 2rem;
+      font-size: 1rem;
+      padding: 0.3rem;
+      border: none;
+      background: $primary;
+      color: $dark;
+    }
+    input:invalid {
+      box-shadow: none;
+    }
+    .button {
+      background: $dark;
+      color: $primary;
+      border: $primary solid 1px;
+    }
+  }
+}

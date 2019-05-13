@@ -34,13 +34,13 @@
       <nav class="nav" id="nav-bar">
         <ul class="nav__list">
           <li class="nav__list__item">
-            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav-link" href="">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav__list__item">
-            <a class="nav-link" href="">Blog</a>
+            <a class="nav-link" href="#blog">Blog</a>
           </li>
         </ul>
       </nav>
@@ -48,35 +48,30 @@
     <nav class="nav--mobile">
       <ul class="list nav--mobile--active__list">
         <li class="nav--mobile--active__list__item">
-          <a class="active " href="">Home</a>
+          <a class="active " href="#home">Home</a>
         </li>
         <li class="nav--mobile--active__list__item">
-          <a>About</a>
+          <a href="#about">About</a>
         </li>
         <li class="nav--mobile--active__list__item">
-          <a>Hosting</a>
-        </li>
-        <li class="nav--mobile--active__list__item">
-          <a>Domain</a>
-        </li>
-        <li class="nav--mobile--active__list__item">
-          <a>Contact</a>
+          <a href="#blog">Blog</a>
         </li>
       </ul>
     </nav>
     <main role="main">
-      <section class="section section--landing">
+      <section id="home" class="section section--landing">
         <div class="section--landing__container">
           <h1 class="title">Lorem ipsum dolor sit.</h1>
           <button>Join Now</button>
         </div>
       </section>
-      <section class="section  section--about">
+      <section id="about" class="section  section--about">
         <h2 class="section--about__title">About <span>Acme</span></h2>
         <div class="section--about__container--video">
           <iframe
+            id="video"
             class="video"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://placeholderVideoAddress"
             gesture="media"
             allow="encrypted-media"
             allowfullscreen
@@ -93,19 +88,19 @@
             Eaque, quisquam perferendis nulla dolorem totam quae.
           </p>
           <div class="buttons-container ">
-            <button class="button " id="content-btn-1">
+            <button class="button" id="content-btn-1">
               Who we are
             </button>
-            <button class="button " id="content-btn-2">
+            <button class="button" id="content-btn-2">
               What we do
             </button>
-            <button class="button " id="content-btn-3">
+            <button class="button" id="content-btn-3">
               Our customers
             </button>
           </div>
         </div>
       </section>
-      <section class="section section--blog">
+      <section id="blog" class="section section--blog">
         <h2 class="section--blog__title">Our <span>Blog</span></h2>
         <div class="cards--container">
           <article class="card">
@@ -123,7 +118,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium porro ut pariatur quibusdam natus exercitationem.
               </p>
-              <a class="card__body__link" href="">Read More</a>
+              <a class="card__body__link" href="asdasd">Read More</a>
             </div>
           </article>
 
@@ -142,7 +137,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium porro ut pariatur quibusdam natus exercitationem.
               </p>
-              <a class="card__body__link" href="">Read More</a>
+              <a class="card__body__link" href="asdasd">Read More</a>
             </div>
           </article>
 
@@ -166,9 +161,59 @@
           </article>
         </div>
       </section>
-      <section class="section section-newsletter"></section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img alt="logo" src="./src/assets/logo/logo-primary.svg" />
+      </div>
+      <ul class="footer__list">
+        <li class="footer__list__item footer__list__item--title">About Us</li>
+        <li class="footer__list__item">
+          Lorem, ipsum.
+        </li>
+        <li class="footer__list__item">
+          Lorem, ipsum.
+        </li>
+        <li class="footer__list__item">
+          Lorem, ipsum.
+        </li>
+        <li class="footer__list__item">
+          Lorem, ipsum.
+        </li>
+        <li class="footer__list__item">
+          Lorem, ipsum.
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__list__item footer__list__item--title">Contact Us</li>
+        <li class="footer__list__item">
+          202-555-0131
+        </li>
+        <li class="footer__list__item">
+          acme@mail.acme
+        </li>
+        <li class="footer__list__item">
+          56/8, crater road,the Moon,Our Solar System - 59620
+        </li>
+      </ul>
+      <div class="footer__container">
+        <p class="footer__container__title">Subscribe To Our Newsletter</p>
+        <form
+          class="footer__form"
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+        >
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <input type="submit" id="submit" class="button" value="Sign Up" />
+        </form>
+      </div>
+    </footer>
     <script src="./src/app/index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

@@ -2,12 +2,13 @@
   &__img {
     width: 100%;
     object-fit: contain;
+    margin-bottom: 0.5rem;
   }
   &__body {
     padding-top: 0.3rem;
     &__title {
-      font-size: 1rem;
-      padding-bottom: 0.3rem;
+      font-size: 1.5rem;
+      padding-bottom: 0.8rem;
       color: darken($light, 10%);
       transition: 250ms;
       &:hover {
@@ -17,13 +18,13 @@
     &__date {
       color: $primary;
       font-weight: bold;
-      font-size: 0.5rem;
+      font-size: 0.7rem;
       display: block;
       margin-bottom: 0.4rem;
     }
     &__text {
       text-align: left;
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       color: lighten($dark, 40%);
       line-height: 1.7;
       padding: 0.3rem 0 0.3rem 0;
@@ -31,6 +32,7 @@
     &__link {
       display: block;
       margin-top: 1rem;
+      font-size: 0.9rem;
       color: $primary;
       text-decoration: none;
       font-weight: bold;
