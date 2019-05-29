@@ -16,7 +16,8 @@ const mobileNav = () => {
     console.log('nani');
     const menu = document.querySelector('.nav--mobile');
     const menuActiveClass = 'nav--mobile--active';
-    const overFlowTarget = document.children[0];
+    const overFlowTarget = document.body
+    console.log(overFlowTarget)
     if (menuState) {
       overFlowTarget.style.overflowY = 'auto';
     } else if (!menuState) {
